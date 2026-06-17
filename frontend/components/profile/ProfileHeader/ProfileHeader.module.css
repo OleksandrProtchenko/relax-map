@@ -1,0 +1,80 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+  text-align: center;
+}
+
+.Avatar {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.AvatarFallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  background-color: var(--color-coral-lighter);
+  color: var(--color-coral-darker);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.Name {
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-green-dark);
+}
+
+.Articles {
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--color-neutral);
+}
+
+.EditButton {
+  padding: 4px 10px;
+}
+
+@media (min-width: 768px) {
+  .Header {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .Info {
+    align-items: flex-start;
+  }
+
+  .EditButton {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Name {
+    font-size: 32px;
+  }
+
+  .EditButton {
+    margin-left: 100px;
+  }
+}
