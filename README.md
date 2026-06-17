@@ -1,32 +1,32 @@
 # RelaxMap
 
-Веб-платформа для поиска и добавления мест отдыха с интерактивной картой, отзывами и личным профилем пользователя.
+A web platform for discovering and adding leisure places with an interactive map, reviews, and a personal user profile.
 
 ![Status](https://img.shields.io/badge/status-in%20development-3b82f6)
 ![Frontend](https://img.shields.io/badge/frontend-Next.js%2016-111827)
 ![Backend](https://img.shields.io/badge/backend-Express%205-065f46)
 ![Database](https://img.shields.io/badge/database-MongoDB-166534)
 
-## О проекте
+## About The Project
 
-RelaxMap помогает пользователям находить интересные места, смотреть подробную информацию, оставлять отзывы и делиться собственными локациями.
-Проект разделен на два независимых приложения:
+RelaxMap helps users find interesting places, view detailed information, leave reviews, and share their own locations.
+The project is split into two independent applications:
 
 - Frontend: Next.js + React + TypeScript
 - Backend: Node.js + Express + MongoDB
 
-## Основные возможности
+## Key Features
 
-- Регистрация и авторизация пользователей
-- Автоматическое обновление сессии через refresh
-- Просмотр списка локаций и карточек мест
-- Добавление и редактирование локаций авторизованными пользователями
-- Загрузка изображений для локаций
-- Отзывы и рейтинги
-- Интерактивные карты Google Maps
-- Профиль пользователя и редактирование данных
+- User registration and authentication
+- Automatic session refresh flow
+- Browse locations list and detailed place pages
+- Add and edit locations for authenticated users
+- Image upload for locations
+- Reviews and ratings
+- Interactive Google Maps integration
+- User profile and profile editing
 
-## Технологии
+## Tech Stack
 
 Frontend:
 
@@ -44,64 +44,66 @@ Backend:
 - Node.js
 - Express 5
 - MongoDB + Mongoose
-- Celebrate для валидации
+- Celebrate for request validation
 - Cookie Parser, CORS, Helmet
-- Multer для загрузки файлов
-- Cloudinary для хранения изображений
+- Multer for file uploads
+- Cloudinary for image storage
 
-## Структура
+## Project Structure
 
+```text
 RelaxMap
-├── frontend
-│ ├── app
-│ ├── components
-│ ├── lib
-│ └── store
-└── backend
-├── src
-│ ├── controllers
-│ ├── services
-│ ├── routes
-│ ├── models
-│ ├── middleware
-│ └── validations
-└── public
+|-- frontend
+|   |-- app
+|   |-- components
+|   |-- lib
+|   `-- store
+`-- backend
+	|-- src
+	|   |-- controllers
+	|   |-- services
+	|   |-- routes
+	|   |-- models
+	|   |-- middleware
+	|   `-- validations
+	`-- public
+```
 
-## Быстрый старт
+## Quick Start
 
-1. Установите зависимости:
+1. Install dependencies:
 
-- перейти в backend и выполнить npm install
-- перейти в frontend и выполнить npm install
+- go to backend and run npm install
+- go to frontend and run npm install
 
-2. Создайте переменные окружения.
+2. Create environment variable files.
 
 Backend .env:
 
 - PORT=5000
-- MONGO_URL=ваша строка подключения MongoDB
+- MONGO_URL=your MongoDB connection string
 - NODE_ENV=development
-- CLOUDINARY_CLOUD_NAME=значение
-- CLOUDINARY_API_KEY=значение
-- CLOUDINARY_API_SECRET=значение
+- CLOUDINARY_CLOUD_NAME=value
+- CLOUDINARY_API_KEY=value
+- CLOUDINARY_API_SECRET=value
 
 Frontend .env.local:
 
 - API_URL=http://localhost:5000
 - NEXT_PUBLIC_API_URL=http://localhost:5000
-- NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=ваш ключ
+- NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your key
 
-3. Запустите проект в двух терминалах:
+3. Run the project in two terminals:
 
 - backend: npm run dev
 - frontend: npm run dev
 
-После запуска:
+After startup:
 
 - Frontend: http://localhost:3000
 - Backend: http://localhost:5000
 
-## Скрипты
+## Scripts
 
 Frontend:
 
@@ -115,34 +117,34 @@ Backend:
 - npm run dev
 - npm start
 
-## API (основные группы)
+## API (Main Groups)
 
 - Auth: register, login, refresh, logout
-- Locations: список, детали, создание, редактирование
-- Feedbacks: получение и создание отзывов
-- Categories: регионы и типы локаций
-- Users: текущий пользователь, профиль, локации пользователя
+- Locations: list, details, create, update
+- Feedbacks: get and create reviews
+- Categories: regions and location types
+- Users: current user, profile, user locations
 
-## Карты
+## Maps
 
-В проекте реализованы:
+Implemented in the project:
 
-- Ввод адреса с автодополнением через Google Places
-- Выбор точки на интерактивной карте
-- Отображение координат в карточке локации
+- Address input with Google Places autocomplete
+- Point selection on an interactive map
+- Coordinate rendering in location details
 
-## Планы развития
+## Roadmap
 
-- Контейнеризация через Docker
-- Автотесты для frontend и backend
+- Docker containerization
+- Automated tests for frontend and backend
 - CI/CD pipeline
-- Избранное и персональные подборки
-- Роли и модерация контента
+- Favorites and personalized collections
+- Roles and content moderation
 
-## Автор
+## Author
 
 Oleksandr Protchenko
 
-## Лицензия
+## License
 
-Проект используется в учебных и портфолио-целях.
+This project is used for learning and portfolio purposes.
